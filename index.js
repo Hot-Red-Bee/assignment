@@ -1,4 +1,4 @@
-// string literals are sequences of characters enclosed in single quotes ('), double quotes ("), or backticks (`).
+/* string literals are sequences of characters enclosed in single quotes ('), double quotes ("), or backticks (`).
 let singleQuote = 'Hello, World!'; // single quote
 let doubleQuote = "Hello, World!"; // double quote
 
@@ -47,13 +47,67 @@ Increment/Decrement: Updates the loop variable after each iteration (e.g., i++, 
 
 //while loop
 // A while loop is used when you don't know how many times you want to repeat an action.
-let i = 0;
-while (i < 5) {
- console.log(i); // 0, 1, 2, 3, 4
- i++;
-} 
-let a = 5;
-while (a > 0) {
- console.log(a); // 5, 4, 3, 2, 1
- a--;
-}
+// let i = 0;
+// while (i < 5) {
+//  console.log(i); // 0, 1, 2, 3, 4
+//  i++;
+// } 
+// let a = 5;
+// while (a > 0) {
+//  console.log(a); // 5, 4, 3, 2, 1
+//  a--;
+// }
+//  function sumOfNumbers(a,b){
+//         return a+b;
+//  } console.log(sumOfNumbers(3,3)) traditional function
+
+//  const sumOfNumbers=(a,b)=>{
+//     return a+b;
+//  }; console.log(sumOfNumbers(3,3)) Basic arrow function
+ 
+// const sumOfNumbers=(a,b) => a*b;
+//   console.log(sumOfNumbers(3,4)) shorter syntax
+// let myname = "Britney";
+// let nameof= () => `Hello, ${myname}!`
+//   console.log( nameof())
+// let fruits = ["Apple", "Banana", "Cherry"];
+
+// const retailCompaies = companies.filter(company => company.category === 'Retail' );
+// console.log(retailCompaies);
+
+
+// const testMap = companies.map( company=>(`${company.name} [${comapany.start} - ${company.end}]`));
+// ? tenery condition (if) : else
+// const totalYears = companies.reduce((total, company)=> total + (company.end - company.start),0);
+// console.log(totalYears);
+const items=[
+    {name: 'Bike',     price: 100 },
+    {name: 'TV',       price: 200 },
+    {name: 'Album',    price: 10  },
+    {name: 'Book',     price: 5   },
+    {name: 'Phone',    price: 500 },
+    {name: 'Computer', price: 1000},
+    {name: 'Keyboard', price: 25  }
+]
+
+// // const filterItems = items.filter(items => items.price <= 100);
+// console.log(filterItems)
+
+// const itemsNames = items.map(items => items.name);
+// console.log(itemsNames)
+
+// const findItems= items.find(items=> items.name === 'Keyboard');
+// console.log(findItems)
+
+//  items.forEach((items)=>
+// console.log(items.name)
+// );
+
+// const cheapItems= items.some(items => items.price <= 100);
+// console.log(cheapItems)
+
+// const cheapItems= items.every(items => items.price <= 1000);
+// console.log(cheapItems) 
+
+ const totalPrice= items.reduce((currentTotal, items)=> items.price + currentTotal,0);
+console.log(totalPrice) 
